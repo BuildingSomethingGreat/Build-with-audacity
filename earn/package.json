@@ -1,0 +1,14 @@
+{
+  "name": "earn-micro-book-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "agent": "node --env-file-if-exists=.env agent/run.js"
+  },
+  "dependencies": {
+    "pdfkit": "^0.15.0"
+  }
+}
